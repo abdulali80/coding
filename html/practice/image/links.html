@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+    <!-- HTML Links - Hyperlinks -->
+<!-- HTML links are hyperlinks. -->
+
+<!-- You can click on a link and jump to another document. -->
+
+<!--1 HTML Links - Syntax -->
+1
+<h1>HTML Links</h1>
+
+<p><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_links_w3schools">Visit W3Schools.com!</a></p>
+
+
+<!--2 HTML Links - The target Attribute -->
+
+<!-- The target attribute specifies where to open the linked document. -->
+
+<!-- The target attribute can have one of the following values: -->
+2
+<h2>The target Attribute</h2>
+
+<a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_links_target" target="_blank">Visit W3Schools!</a> 
+
+<p>If target="_blank", the link will open in a new browser window or tab.</p>
+
+3
+<!--3 Absolute URLs vs. Relative URLs -->
+<!-- Both examples above are using an absolute URL (a full web address) in the href attribute. -->
+
+<h2>Absolute URLs</h2>
+<p><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_links">Absolute URLs vs. Relative URLs</a></p>
+<p><a href="https://www.google.com/">Google</a></p>
+
+<h2>Relative URLs</h2>
+<p><a href="html_images.asp">HTML Images</a></p>
+<p><a href="/css/default.asp">CSS Tutorial</a></p>
+
+4
+<!--4 HTML Links - Use an Image as a Link -->
+
+<h2>Image as a Link</h2>
+
+<p>The image below is a link. Try to click on it.</p>
+
+<a href="default.asp"><img src="girl.jpg.jpg" alt="HTML tutorial" style="width:42px;height:42px;"></a>
+
+<a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_links_image">HTML Links - Use an Image as a Link</a>
+
+<br>5
+<!--5 Link to an Email Address -->
+
+<h2>Link to an Email Address</h2>
+
+<p>To create a link that opens in the user's email program (to let them send a new email), use mailto: inside the href attribute:</p>
+
+<p><a href="mailto:someone@example.com">Send email</a></p>
+
+<a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_links_email">Link to an Email Address</a>
+
+<br>6
+<!-- Button as a Link -->
+
+<h2>Button as a Links</h2>
+
+<p>Click the button to go to the HTML tutorial.</p>
+
+<button onclick="document.location='https://www.w3schools.com/html/tryit.asp?filename=tryhtml_links_button_element'">HTML Tutorial</button>
+
+<br>7
+<!-- Link Titles -->
+<h2>Link Titles</h2>
+<p>The title attribute specifies extra information about an element. The information is most often shown as a tooltip text when the mouse moves over the element.</p>
+<a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_links_title" title="Go to W3Schools HTML section">Link Titles</a>
+
+<br>8
+<!-- More on Absolute URLs and Relative URLs -->
+<!-- example 1 -->
+<br>1
+<h2>External Paths</h2>
+
+<p>This example uses a full URL to link to a web page:</p>
+<p><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_links_external_url">HTML tutorial</a></p>
+
+<!-- example 2 -->
+2
+<h2>External Paths</h2>
+
+<p>This example links to a page located in the html folder on the current web site:</p>
+
+<p><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_links_external_relative">HTML tutorial</a></p>
+
+<!-- example 3 -->
+<br>3
+
+<h2>External Paths</h2>
+
+<p>This example links to a page located in the same folder as the current page:</p>
+
+<p><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_links_external">HTML tutorial</a></p>
+
+
+<!-- HTML Link Colors -->
+<!-- By default, a link will appear like this (in all browsers): -->
+
+<!-- An unvisited link is underlined and blue -->
+<!-- A visited link is underlined and purple -->
+<!-- An active link is underlined and red -->
+<!-- You can change the link state colors, by using CSS: -->
+4
+<head>
+    <style>
+    a:link {
+      color: green;
+      background-color: transparent;
+      text-decoration: none;
+    }
+    a:visited {
+      color: red;
+      background-color: transparent;
+      text-decoration: none;
+    }
+    a:hover {
+      color: red;
+      background-color: transparent;
+      text-decoration: underline;
+    }
+    a:active {
+      color: yellow;
+      background-color: transparent;
+      text-decoration: underline;
+    }
+    </style>
+    </head>
+    <h2>Link Colors</h2>
+
+<p>You can change the default colors of links</p>
+
+<a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_links_colors" target="_blank">HTML Images</a> 
+
+<br>5
+<!-- Link Buttons -->
+<!-- A link can also be styled as a button, by using CSS: -->
+
+<style>
+    a:link, a:visited {
+      background-color: #f44336;
+      color: white;
+      padding: 15px 25px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+    }
+    
+    a:hover, a:active {
+      background-color: red;
+    }
+    </style>
+<h2>Link Button</h2>
+<p>A link styled as a button:</p>
+<a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_links_button" target="_blank">This is a link</a>
+
+
+<!-- Create a Bookmark in HTML -->
+
+<!-- example 1 -->
+
+<!-- First, use the id attribute to create a bookmark: -->
+<h2 id="C4">Chapter 4</h2>
+
+<!-- example 2 -->
+
+<p><a href="#C4">Jump to Chapter 4</a></p>
+<p><a href="#C10">Jump to Chapter 10</a></p>
+
+<h2>Chapter 1</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 2</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 3</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2 id="C4">Chapter 4</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 5</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 6</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 7</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 8</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 9</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2 id="C10">Chapter 10</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 11</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 12</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 13</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 14</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 15</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 16</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 17</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 18</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 19</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 20</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 21</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 22</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 23</h2>
+<p>This chapter explains ba bla bla</p>
+
+
+<!-- example 3 -->
+
+<!-- You can also add a link to a bookmark on another page: -->
+
+<a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_links_bookmark">Jump to Chapter 4</a>
+
+</body>
+</html>

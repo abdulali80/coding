@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+    <!--1 The HTML <picture> Element -->
+
+<h2>The picture Element</h2>
+
+<picture>
+  <source media="(min-width: 650px)" srcset="vege.jpg">
+  <source media="(min-width: 465px)" srcset="girl.jpg.jpg">
+  <img src="vege.jpg" style="width:auto;">
+</picture>
+
+<p>Resize the browser to see different versions of the picture loading at different viewport sizes.
+The browser looks for the first source element where the media query matches the user's current viewport width,
+and fetches the image specified in the srcset attribute.</p>
+
+<p>The img element is required as the last child tag of the picture declaration block.
+The img element is used to provide backward compatibility for browsers that do not support the picture element, or if none of the source tags matched.
+</p>
+
+<p><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_images_picture1">picture> Element</a></p>
+
+
+
+
+<!--2 When to use the Picture Element -->
+<!-- There are two main purposes for the <picture> element: -->
+
+    <h2>The picture Element</h2>
+
+<picture>
+  <!-- <source srcset="vege.jpg"> -->
+  <source srcset="girl.jpg.jpg">
+  <img src="img_beatles.gif" alt="Beatles" style="width:auto;">
+</picture>
+
+<p>The picture element can be used when the image format is not supported by all devices.</p>
+
+<p>The device will use the first image format it supports, and ignore the rest of the images.</p>
+
+<p><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_images_picture_format">use the Picture Element</a></p>
+
+</body>
+</html>
+
