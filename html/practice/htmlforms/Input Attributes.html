@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+    <br>1
+    <!-- The value Attribute -->
+<!-- The input value attribute specifies an initial value for an input field: -->
+
+<h1>The input value attribute</h1>
+
+<p>The value attribute specifies an initial value for an input field:</p>
+
+<form action="/action_page.php">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="John"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Doe"><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+<p><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_input_attributes_value">The input value attribute</p>
+
+<br>2
+<!-- The readonly Attribute -->
+<!-- The input readonly attribute specifies that an input field is read-only. -->
+
+<h1>The input readonly attribute</h1>
+
+<p>The readonly attribute specifies that an input field should be read-only (cannot be changed):</p>
+
+<form action="/action_page.php">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="John" readonly><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Doe"><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+<p><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_input_attributes_readonly">The input readonly attribute</p>
+
+
+    <br>3
+    <!-- The disabled Attribute -->
+<!-- The input disabled attribute specifies that an input field should be disabled. -->
+
+<h1>The input disabled attribute</h1>
+
+<p>The disabled attribute specifies that an input field should be disabled (unusable and un-clickable):</p>
+
+<form action="/action_page.php">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="John" disabled><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Doe"><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+<p><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_input_attributes_disabled">The input disabled attribute</p>
+
+
+    <br>4
+    <!-- The size Attribute -->
+<!-- The input size attribute specifies the visible width, in characters, of an input field. -->
+<!-- The default value for size is 20. -->
+
+<h1>The input size attribute</h1>
+
+<p>The size attribute specifies the width (in characters) of an input field:</p>
+
+<form action="/action_page.php">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" size="50"><br>
+  <label for="pin">PIN:</label><br>
+  <input type="text" id="pin" name="pin" size="4"><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+<p><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_input_attributes_size">The input size attribute</p>
+
+<br>5
+<!-- The maxlength Attribute -->
+<!-- The input maxlength attribute specifies the maximum number of characters allowed in an input field. -->
+
+<h1>The input maxlength attribute</h1>
+
+<p>The maxlength attribute specifies the maximum number of characters allowed in an input field:</p>
+
+<form action="/action_page.php">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" size="50"><br>
+  <label for="pin">PIN:</label><br>
+  <input type="text" id="pin" name="pin" maxlength="4" size="4"><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+<p><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_input_attributes_maxlength">The input maxlength attribute</p>
+ 
+<br>6
+<!-- The min and max Attributes -->
+
+<h1>The input min and max attributes</h1>
+
+<p>The min and max attributes specify the minimum and maximum values for an input element.</p>
+
+<form action="/action_page.php">
+  <label for="datemax">Enter a date before 1980-01-01:</label>
+  <input type="date" id="datemax" name="datemax" max="1979-12-31"><br><br>
+
+  <label for="datemin">Enter a date after 2000-01-01:</label>
+  <input type="date" id="datemin" name="datemin" min="2000-01-02"><br><br>
+  
+  <label for="quantity">Quantity (between 1 and 5):</label>
+  <input type="number" id="quantity" name="quantity" min="1" max="5"><br><br>
+
+  <input type="submit" value="Submit">
+</form>
+
+<p><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml5_input_max_min">The input min and max attributes</p>
+
+<br>7
+<!-- The multiple Attribute -->
+<!-- The multiple attribute works with the following input types: email, and file. -->
+
+<h1>The input multiple attributes</h1>
+
+<p>The multiple attribute specifies that the user is allowed to enter more than one value in an input field.</p>
+
+<form action="/action_page.php">
+  <label for="files">Select files:</label>
+  <input type="file" id="files" name="files" multiple><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+<p>To select multiple files, hold down the CTRL or SHIFT key while selecting.</p>
+
+<p><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml5_input_multiple">The input multiple attributes</p>
+
+
+<br>8
+<!-- The pattern Attribute -->
+
+<h1>The input pattern attribute</h1>
+
+<p>The pattern attribute specifies a regular expression that the input element's value is checked against.</p>
+
+<form action="/action_page.php">
+  <label for="country_code">Country code:</label>
+  <input type="text" id="country_code" name="country_code" pattern="[A-Za-z]{3}" title="Three letter country code"><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+<p><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml5_input_pattern">The input pattern attribute</p>
+
+
+<br>9
+<!-- The placeholder Attribute -->
+<!-- The placeholder attribute works 
+ with the following input types: text, search, url, number, tel, email, and password. -->
+
+ <h1>The input placeholder attribute</h1>
+
+<p>The placeholder attribute specifies a short hint that describes the expected value of an input field.</p>
+
+<form action="/action_page.php">
+  <label for="phone">Enter a phone number:</label>
+  <input type="tel" id="phone" name="phone" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+<p><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml5_input_placeholder">The input placeholder attribute</p>
+
+<br>10
+<!-- The required Attribute -->
+<!-- The input required attribute specifies that an input field must be filled out before submitting the form. -->
+
+<h1>The input required attribute</h1>
+
+<p>The required attribute specifies that an input field must be filled out before submitting the form.</p>
+
+<form action="/action_page.php">
+  <label for="username">Username:</label>
+  <input type="text" id="username" name="username" required>
+  <input type="submit" value="Submit">
+</form>
+
+<p><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml5_input_required">The input required attribute</p>
+
+<br>11
+<!-- The step Attribute -->
+<!-- The input step attribute specifies the legal number intervals for an input field -->
+<!-- Example: if step="3", legal numbers could be -3, 0, 3, 6, etc. -->
+
+<h1>The input step attribute</h1>
+
+<p>The step attribute specifies the legal number intervals for an input element.</p>
+
+<form action="/action_page.php">
+  <label for="points">Points:</label>
+  <input type="number" id="points" name="points" step="3">
+  <input type="submit" value="Submit">
+</form>
+
+<p><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml5_input_step">The input step attribute</p>
+
+
+    <br>12
+    <!-- The autofocus Attribute -->
+<!-- The input autofocus attribute specifies that an input field should automatically get focus when the page loads. -->
+
+<h1>The input autofocus attribute</h1>
+
+<p>The autofocus attribute specifies that the input field should automatically get focus when the page loads.</p>
+
+<form action="/action_page.php">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" autofocus><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname"><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+<p><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml5_input_autofocus">The input autofocus attribute</p>
+
+
+    <br>13
+    <!-- The height and width Attributes -->
+    <!-- The input height and width attributes specify the height and width of an <input type="image"> element. -->
+
+
+    <h1>The input height and width attributes</h1>
+
+<p>The height and width attributes specify the height and width of an input type="image" element.</p>
+
+<form action="/action_page.php">
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <label for="lname">Last name:</label>
+  <input type="text" id="lname" name="lname"><br><br>
+  <input type="image" src="/html/practice/img/icon.webp" alt="Submit" width="48" height="48">
+</form>
+
+<p><b>Note:</b> The input type="image" sends the X and Y coordinates of the click that activated the image button.</p>
+
+<p><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml5_input_height_width">The input height and width attributes</p>
+
+
+    <br>14
+    <!-- The list Attribute -->
+<!-- The input list attribute refers to a <datalist> element that contains pre-defined options for an <input> element. -->
+
+    <h1>The input list attribute</h1>
+
+    <p>The list attribute refers to a datalist element that contains pre-defined options for an input element.</p>
+    
+    <form action="/action_page.php">
+      <input list="browsers" name="browser">
+      <datalist id="browsers">
+        <option value="Edge">
+        <option value="Firefox">
+        <option value="Chrome">
+        <option value="Opera">
+        <option value="Safari">
+      </datalist>
+      <input type="submit" value="Submit">
+    </form>
+    
+<p><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml5_datalist">The input list attribute</p>
+
+
+    <br>15
+    <!-- The autocomplete Attribute -->
+<!-- The input autocomplete attribute specifies whether a form or an input field should have autocomplete on or off. -->
+
+<h1>The autocomplete attribute</h1>
+
+<p>The autocomplete attribute specifies whether or not an input field should have autocomplete enabled.</p>
+
+<p>Fill in and submit the form, then reload the page to see how autocomplete works.</p>
+
+<p>Notice that autocomplete is "on" for the form, but "off" for the e-mail field!</p>
+
+<form action="/action_page.php" autocomplete="on">
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <label for="lname">Last name:</label>
+  <input type="text" id="lname" name="lname"><br><br>
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" autocomplete="off"><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+<p><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml5_input_autocomplete">The autocomplete attribute</p>
+
+</body>
+</html>
